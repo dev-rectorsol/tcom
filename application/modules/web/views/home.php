@@ -14,11 +14,9 @@
       <div class="col-lg-6 col-md-7 d-flex align-items-center">
         <div class="overview-content">
           <h2>Welcome To <span>Turaja</span> Store!</h2>
-          <p class="short_desc">We Provide Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae nisi fuga facilis, consequuntur, maiores eveniet voluptatum, omnis possimus
-            temporibus aspernatur nobis animi in exercitationem vitae nulla! Adipisci ullam illum quisquam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nulla veniam? Magni aliquid
-            asperiores magnam. Veniam ex tenetur.</p>
+          <p class="short_desc">Tuaraja, the Giver of Life! A synonym of Goddess Bhavani, avatar of Goddess Parvati/ Durga, Turaja is the source of creative energy, the divine Mother, who is the supreme provider.
+
+We, at Turaja, delve deep into the philosophy of The Goddess. Our creations are made for the sustainability conscious, aesthetic driven consumer. Our designs suit the global palette while being rooted firmly into Indian craftsmanship.</p>
           <div class="kenne-about-us_btn-area">
             <a class="about-us_btn" href="#">Read More</a>
           </div>

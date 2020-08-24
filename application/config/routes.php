@@ -62,8 +62,9 @@ $route['forget'] = 'authentication/resetView';
 
 $route['home'] = 'web/home/index';
 $route['about'] = 'web/home/about';
-$route['courses'] = 'web/home/courses';
-$route['courseDetails'] = 'web/home/courseDetails';
+$route['privacy'] = 'web/home/privacypolicy';
+$route['term'] = 'web/home/term';
+$route['refund'] = 'web/home/return';
 $route['event'] = 'web/home/event';
 $route['faq'] = 'web/home/faq';
 $route['contact'] = 'web/home/contact';

@@ -61,12 +61,11 @@ class Pages extends CI_Controller {
 		$data['Menu_shop_text'] = $this->Common_model->get_menu('shop');
 		$data['Menu_coll_image'] = $this->Homepage_model->get_menu_by_type('collection');
 		$data['Menu_coll_text'] = $this->Common_model->get_menu('collection');
-		$data['Menu_tech_image'] = $this->Homepage_model->get_menu_by_type('technique');
+		$data['Menu_tech_image'] = $this->Homepapge_model->get_menu_by_type('technique');
 		$data['Menu_tech_text'] = $this->Common_model->get_menu('technique');
 		$this->load->view('index', $data);
 		}
-
-
+	
 
 }
 

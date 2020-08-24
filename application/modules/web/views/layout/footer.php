@@ -38,13 +38,13 @@
             <div class="col-lg-10 col-md-10 col-sm-10">
               <div class="footer-widgets quick-link">
                 <ul>
-                  <li><a href="javascript:void(0)">About Us</a></li>
+                  <li><a href="<?php echo base_url('web/home/about') ?>">About Us</a></li>
                   <li><a href="javascript:void(0)">Faq's </a></li>
                   <li><a href="javascript:void(0)">Blog</a></li>
-                  <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                  <li><a href="javascript:void(0)">Terms & Conditions</a></li>
-                  <li><a href="javascript:void(0)">Refund/Exchange Policy</a></li>
-                  <li><a href="javascript:void(0)">Contact Us</a></li>
+                  <li><a href="<?php echo base_url('web/home/privacy')?>">Privacy Policy</a></li>
+                  <li><a href="<?php echo base_url('web/home/term')?>">Terms & Conditions</a></li>
+                  <li><a href="<?php echo base_url('web/home/refund')?>">Refund/Exchange Policy</a></li>
+                  <li><a href="<?php echo base_url('web/home/contact')?>">Contact Us</a></li>
 
 
                 </ul>

@@ -85,7 +85,7 @@ class Home extends Front {
         $this->data['cartItems'] = $this->cart->contents();
 				$this->data['category']=  $this->Common_model->select('category');
 				$this->data['testimonial']=  $this->Common_model->select('testimonial');
-		$this->data['main_content'] = $this->load->view('about_us', $this->data, true);
+		$this->data['main_content'] = $this->load->view('about', $this->data, true);
 		$this->data['Menu_shop_image'] = $this->Homepage_model->get_menu_by_type('shop');
 		$this->data['Menu_shop_text'] = $this->Common_model->get_menu('shop');
 		$this->data['Menu_coll_image'] = $this->Homepage_model->get_menu_by_type('collection');
@@ -93,24 +93,31 @@ class Home extends Front {
 		$this->data['Menu_tech_image'] = $this->Homepage_model->get_menu_by_type('technique');
 		$this->data['Menu_tech_text'] = $this->Common_model->get_menu('technique');
         $this->load->view('index', $this->data);
+	}
+	
+	public function privacy(){
+
+        $this->data['page'] = 'Privacy policy';
+		$this->data['main_content'] = $this->load->view('privacypolicy', $this->data, true);
+        $this->load->view('index', $this->data);
+	}
+	public function term(){
+
+        $this->data['page'] = 'Terms & Conditions';
+		$this->data['main_content'] = $this->load->view('term', $this->data, true);
+        $this->load->view('index', $this->data);
+	}
+	
+	public function refund(){
+
+        $this->data['page'] = 'Refund/Exchange Policy';
+		$this->data['main_content'] = $this->load->view('return', $this->data, true);
+        $this->load->view('index', $this->data);
     }
 
     public function contact(){
-        $this->data['page'] = 'contact';
-				$social_value = !empty($this->db->get_where('setting', array('setting_name' => 'social_icon'))->row()->setting_value) ? $this->db->get_where('setting', array('setting_name' => 'social_icon'))->row()->setting_value : '';
-				$this->data['social'] = json_decode($social_value, true);
-
-				$this->data['setting']=$this->Common_model->select('homesetting');
-
-        $this->data['cartIvalue'] = $this->cart->contents();
-				$this->data['category']=  $this->Common_model->select('category');
+        $this->data['page'] = 'contact Us';
 		$this->data['main_content'] = $this->load->view('contact', $this->data, true);
-		$this->data['Menu_shop_image'] = $this->Homepage_model->get_menu_by_type('shop');
-		$this->data['Menu_shop_text'] = $this->Common_model->get_menu('shop');
-		$this->data['Menu_coll_image'] = $this->Homepage_model->get_menu_by_type('collection');
-		$this->data['Menu_coll_text'] = $this->Common_model->get_menu('collection');
-		$this->data['Menu_tech_image'] = $this->Homepage_model->get_menu_by_type('technique');
-		$this->data['Menu_tech_text'] = $this->Common_model->get_menu('technique');
         $this->load->view('index', $this->data);
     }
 
